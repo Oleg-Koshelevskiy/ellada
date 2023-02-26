@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <title>Еллада-фітнес</title>
+  </head>
+  <body>
+    <header>
+      <div class="slides">
+        <div class="slide">
+          <img src="images/woman.jpg" alt="sporty woman" />
+        </div>
+        <div class="slide">
+          <img src="images/man.jpg" alt="sporty man" />
+        </div>
+        <div class="slide">
+          <img src="images/couple.jpg" alt="sporty couple" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="header">
+          <div>
+            <img src="images/logo-horiz.svg" alt="Ellada logo horizontal" />
+          </div>
+          <nav class="header-nav">
+            <ul>
+              <li>Про нас</li>
+              <li>Послуги</li>
+              <li>Тренери</li>
+              <li>Контакти</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container"></div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <img src="images/logo-vert.svg" alt="Ellada logo vertical" />
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slides").slick({
+          dots: true,
+          infinite: true,
+          speed: 1000,
+          fade: true,
+          cssEase: "linear",
+          autoplay: true,
+          arrows: false,
+          pauseOnHover: false,
+        });
+      });
+    </script>
+  </body>
+</html>

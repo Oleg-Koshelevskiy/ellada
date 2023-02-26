@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  top: 0;
+  max-width: 90rem;
+  width: 100%;
+
+  img {
+    height: 10rem;
+    margin-left: 1rem;
+  }
+}
+
+.header-nav {
+  width: 100%;
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+    li {
+      color: $color-white;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      &:hover {
+        color: $color-secondary;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.slide {
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+}
