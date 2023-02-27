@@ -27,7 +27,7 @@ body {
     align-items: center;
     height: 10rem; }
     .header-nav ul li {
-      color: #e7f5ff;
+      color: #fff;
       font-size: 1rem;
       font-weight: 500;
       letter-spacing: 2px;
@@ -37,9 +37,19 @@ body {
         cursor: pointer; }
 
 .slide {
-  margin: 0 auto; }
+  position: relative; }
   .slide img {
     width: 100%; }
+  .slide p {
+    color: white;
+    font-size: 2.5rem;
+    position: fixed;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    bottom: 10%;
+    width: 30%;
+    text-align: center; }
 
 main {
   height: 10rem; }
