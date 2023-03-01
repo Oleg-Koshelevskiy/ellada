@@ -70,13 +70,15 @@
   }
   .slide {
     img {
-      width: 120%;
+      width: 130%;
+      margin-left: -10%;
     }
     p {
       font-size: 1.5rem;
       left: 1rem;
-    }
+    }    
   }
+
   .header-nav {
     position: fixed;
     top: 0;
@@ -103,7 +105,7 @@
     width: 10rem;
     height: 10rem;
     left: calc(100% - 11rem);
-    top: 10%;
+    top: 5rem;
     li {
       text-shadow: 1px 1px 2px black, 0 0 1em #193c59, 0 0 0.2em #193c59;
     }
