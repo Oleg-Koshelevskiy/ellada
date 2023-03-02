@@ -1,0 +1,17 @@
+.primaryHeader {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    transform: skew(-15deg);
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    margin:4rem 0;
+}
+
+@media (max-width: 1023px) {
+    .primaryHeader {
+        font-size: 1.8rem;
+        margin:3rem 0;       
+    }
+}
