@@ -1,6 +1,5 @@
 .primaryHeader {
-    font-size: 3rem;
-    color: white;
+    font-size: 3rem;    
     text-align: center;
     text-transform: uppercase;
     transform: skew(-15deg);
@@ -9,9 +8,22 @@
     margin:4rem 0;
 }
 
+.paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+
 @media (max-width: 1023px) {
     .primaryHeader {
         font-size: 1.8rem;
         margin:3rem 0;       
+    }
+    .paragraph {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
     }
 }
