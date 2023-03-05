@@ -20,15 +20,15 @@
   <body>
     <header>
       <div class="slides">
-        <div class="slide slide1">
+        <div class="slide">
           <img src="images/woman.jpg" alt="woman" />
           <p>Краса - результат тренувань</p>
         </div>
-        <div class="slide slide2">
+        <div class="slide">
           <img src="images/man.jpg" alt="man" />
           <p>Побудуй тіло своєї мрії</p>
         </div>
-        <div class="slide slide3">
+        <div class="slide">
           <img src="images/couple.jpg" alt="couple" />
           <p>Наповни своє життя енергією</p>
         </div>
@@ -59,7 +59,7 @@
     </header>
 
     <main>
-      <section class="container">
+      <section class="container section">
         <h1 class="primaryHeader colorWhite">Про нас</h1>
         <div class="content-block colorWhite">
           <div class="content-item">
@@ -99,24 +99,58 @@
             <p>комфортні душові та роздягальні</p>
           </li>
           <li>
-            <img src="images/tariff-plans.png" alt="tariff-plans" />
+            <img
+              class="img-bigger"
+              src="images/tariff-plans.png"
+              alt="tariff-plans"
+            />
             <p>широкий вибір абонементів</p>
           </li>
           <li>
-            <img src="images/low-price.png" alt="low-price" />
+            <img
+              class="img-bigger"
+              src="images/low-price.png"
+              alt="low-price"
+            />
             <p>демократичні ціни</p>
           </li>
           <li>
             <img src="images/parking.png" alt="parking" />
             <p>парковка</p>
           </li>
-          <li></li>
         </ul>
       </section>
 
       <section class="container">
         <h1 class="primaryHeader colorWhite">Послуги</h1>
-        <div class="content-block colorWhite"></div>
+        <div>
+          <article>
+            <h2 class="secondaryHeader colorRed">Тренажерна зала</h2>
+            <div class="content-block">
+              <p class="paragraph colorWhite content-item">
+                Фітнес-центр "ELLADA sport" має у своєму розпорядженні сучасні
+                та функціональні тренажери, різномантний інвентар від
+                перевірених виробників, що дозволить зробити твої тренування
+                максимально ефективними
+              </p>
+              <div class="content-item">
+                <div class="slides-gym">
+                  <div class="slide-main">
+                    <img src="images/gym-item1.jpg" alt="gym-item1" />
+                  </div>
+                  <div class="slide-main">
+                    <img src="images/gym-item2.jpg" alt="gym-item2" />
+                  </div>
+                  <div class="slide-main">
+                    <img src="images/gym-item3.jpg" alt="gym-item3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article></article>
+          <article></article>
+        </div>
       </section>
     </main>
 
@@ -149,6 +183,22 @@
           autoplay: true,
           autoplaySpeed: 6000,
           arrows: false,
+          pauseOnHover: false,
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slides-gym").slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: "linear",
+          autoplay: true,
+          autoplaySpeed: 6000,
+          arrows: true,
           pauseOnHover: false,
         });
       });
