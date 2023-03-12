@@ -14,7 +14,8 @@ body {
   transform: skew(-15deg);
   font-weight: 700;
   letter-spacing: 0.3rem;
-  margin: 5rem 0; }
+  margin: 5rem auto;
+  background: linear-gradient(to right, #1b2f3f, rgba(139, 139, 139, 0.3)); }
 
 .secondaryHeader {
   font-size: 2rem;
@@ -23,7 +24,7 @@ body {
   transform: skew(-15deg);
   font-weight: 500;
   letter-spacing: 0.2rem;
-  margin: 4rem 0; }
+  padding: 4rem 0; }
 
 .paragraph {
   font-size: 1.5rem;
@@ -38,7 +39,7 @@ body {
   .secondaryHeader {
     font-size: 1.4rem;
     letter-spacing: 0.15rem;
-    margin: 2rem 0; }
+    padding: 2rem 0; }
   .paragraph {
     font-size: 1rem;
     margin-bottom: 0.8rem;
@@ -210,6 +211,18 @@ body {
 .slick-next {
   margin-right: 2rem;
   z-index: 10; }
+
+.bgr-gym {
+  background: linear-gradient(to right, #1b2f3f, rgba(255, 255, 255, 0)), url(../../images/bgr-gym.jpg);
+  background-size: cover; }
+
+.bgr-boxing {
+  background: linear-gradient(to right, #1b2f3f, rgba(255, 255, 255, 0)), url(../../images/bgr-boxing.jpg);
+  background-size: cover; }
+
+.bgr-group {
+  background: linear-gradient(to right, #1b2f3f, rgba(139, 139, 139, 0.3)), url(../../images/bgr-group.jpg);
+  background-size: cover; }
 
 @media (max-width: 1023px) {
   .section {

@@ -50,6 +50,22 @@
   z-index: 10;
 }
 
+.bgr-gym {
+  background: linear-gradient(to right, #1b2f3f, rgba(255, 255, 255, 0)),
+    url(../../images/bgr-gym.jpg);
+  background-size: cover;
+}
+.bgr-boxing {
+  background: linear-gradient(to right, #1b2f3f, rgba(255, 255, 255, 0)),
+    url(../../images/bgr-boxing.jpg);
+  background-size: cover;
+}
+.bgr-group {
+  background: linear-gradient(to right, #1b2f3f, rgba(139, 139, 139, 0.3)),
+    url(../../images/bgr-group.jpg);
+  background-size: cover;
+}
+
 @media (max-width: 1023px) {
   .section {
     margin-top: 5rem;
