@@ -1,0 +1,43 @@
+.main-btn {
+    margin: 2rem auto;
+    display: block;
+    padding: 1rem 2rem;
+    border: 1px solid $color-secondary;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $color-secondary;
+    background-color: $color-white;
+    text-transform: uppercase;
+
+
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 512px) {
+    .main-btn {
+        margin: 1.5rem auto;
+        display: block;
+        padding: 0.7rem 1.5rem;
+        border: 1px solid $color-secondary;
+        border-radius: 8px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        color: $color-secondary;
+        background-color: $color-white;
+        text-transform: uppercase;
+    
+    
+        &:hover {
+            background-color: $color-secondary;
+            color: $color-white;
+            cursor: pointer;
+        }
+    }
+  }

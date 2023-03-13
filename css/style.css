@@ -52,6 +52,41 @@ body {
 .colorRed {
   color: #ee364f; }
 
+.main-btn {
+  margin: 2rem auto;
+  display: block;
+  padding: 1rem 2rem;
+  border: 1px solid #ee364f;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ee364f;
+  background-color: #efefef;
+  text-transform: uppercase; }
+  .main-btn:hover {
+    background-color: #ee364f;
+    color: #efefef;
+    cursor: pointer; }
+
+@media (max-width: 512px) {
+  .main-btn {
+    margin: 1.5rem auto;
+    display: block;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #ee364f;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #ee364f;
+    background-color: #efefef;
+    text-transform: uppercase; }
+    .main-btn:hover {
+      background-color: #ee364f;
+      color: #efefef;
+      cursor: pointer; } }
+
 .header {
   display: flex;
   gap: 2rem;
