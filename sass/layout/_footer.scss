@@ -1,7 +1,57 @@
 .footer {
   display: flex;
+  justify-content: space-evenly;
+  .logo-info {
+    display: flex;
+    justify-content: space-evenly;
+  }  
   img {
     margin-left: 1rem;
     height: 14rem;
+  }
+  margin-bottom: 1rem;
+}
+
+iframe {
+  width: 40%;  
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .footer {
+    flex-wrap: wrap;    
+  }
+  .logo-info {
+    width: 100%;
+  }
+
+  iframe {
+    width: 60%;    
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .footer {
+    flex-wrap: wrap;
+    
+    img {
+      margin-left: 1rem;
+      height: 10rem;
+    }
+    .contacts {
+      font-size: 0.8rem;
+    }
+  }
+  .logo-info {
+    width: 100%;
+  }
+
+  iframe {
+    width: 90%;    
+    border-radius: 8px;
+    margin-top: 1rem;
   }
 }
