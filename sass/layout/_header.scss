@@ -5,8 +5,6 @@
   top: 0;
   max-width: 90rem;
   width: 100%;
-  // justify-content: flex-end;
-
   img {
     height: 10rem;
     margin-left: 1rem;
@@ -148,7 +146,7 @@
 
   .menu-btn.active {
     position: fixed;
-    left: calc(100% - 40px);
+    left: calc(100% - 60px);
 
     span:nth-of-type(1) {
       display: none;
