@@ -30,6 +30,18 @@ body {
   letter-spacing: 0.2rem;
   padding: 4rem 0; }
 
+.tertiaryHeader {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  transform: skew(-15deg);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  padding: 2rem 0; }
+
 .paragraph {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -49,6 +61,17 @@ body {
     margin-bottom: 0.8rem;
     letter-spacing: 1px;
     line-height: 1.5rem; } }
+
+@media (max-width: 512px) {
+  .tertiaryHeader {
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transform: skew(-15deg);
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    padding: 1.8rem 0;
+    margin-top: 1rem; } }
 
 .colorWhite {
   color: #efefef; }
@@ -100,15 +123,6 @@ body {
   background-color: rgba(11, 16, 32, 0.6);
   z-index: 10; }
 
-.modal1 {
-  display: none; }
-
-.modal2 {
-  display: none; }
-
-.modal3 {
-  display: none; }
-
 .modal-window {
   position: relative;
   max-width: 50rem;
@@ -136,6 +150,8 @@ body {
   border: 1px solid #ee364f;
   border-radius: 10px;
   font-size: 1rem;
+  text-align: center;
+  line-height: 1.8rem;
   font-weight: 700;
   color: #ee364f;
   background-color: #efefef;
@@ -148,6 +164,7 @@ body {
 .price-item {
   display: flex;
   justify-content: space-between;
+  font-size: 1.4rem;
   padding: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px; }
@@ -158,18 +175,18 @@ body {
 .economy {
   position: absolute;
   display: block;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.8rem;
+  height: 1.4rem;
   border: 1px solid #efefef;
   background: #ee364f6f;
   text-align: center;
   border-radius: 50%;
   font-size: 0.8rem;
-  line-height: 2.5rem;
+  line-height: 1.4rem;
   color: #efefef;
   font-weight: 700;
   right: -20px;
-  top: -30px; }
+  top: -20px; }
 
 .show {
   display: block; }
@@ -183,19 +200,26 @@ body {
     margin-top: 5vh;
     width: calc(100% - 60px); }
   .price-item {
-    padding: 0.2rem; }
+    padding: 0.2rem;
+    font-size: 1.2rem; }
   .economy {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2rem;
+    height: 1rem;
     font-size: 0.6rem;
-    line-height: 1.8rem;
+    line-height: 1rem;
     right: -8px;
-    top: -20px; } }
+    top: -12px; } }
 
 @media (max-width: 512px) {
   .modal-window {
     width: calc(100% - 30px);
-    margin-top: 5vh; } }
+    margin-top: 5vh; }
+  .btn-close {
+    right: 0.5rem;
+    top: 0.5rem; }
+  .price-item {
+    padding: 0.2rem;
+    font-size: 0.8rem; } }
 
 .header {
   display: flex;

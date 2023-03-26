@@ -5,32 +5,27 @@ menuBtn.addEventListener("click", function () {
   menu.classList.toggle("active");
 });
 
-let closeBtn = document.querySelector(".btn-close");
-let priceGym = document.querySelector('.price-gym');
-let modal1 = document.querySelector('.modal1');
+let modal = document.querySelectorAll('.modal');
+let openModalBtn = document.querySelectorAll('.openModal')
+let closeModalBtn = document.querySelectorAll(".btn-close");
+console.log(modal, openModalBtn, closeModalBtn);
 
+openModalBtn.forEach((item, index) => item.addEventListener('click', function (e){  
+  const match = [...modal].filter((el, i) => i === index)  
+  match[0].classList.add("show");
+  match[0].classList.remove("hide");
+}));
 
-function openModal1() {
-  modal1.classList.add("show");
-  modal1.classList.remove("hide");
-}
+closeModalBtn.forEach((item, index) => item.addEventListener('click', function (e){  
+  const match = [...modal].filter((el, i) => i === index)  
+  match[0].classList.add("hide");
+  match[0].classList.remove("show");
+}));
 
-function closeModal1() {
-  modal1.classList.add("hide");
-  modal1.classList.remove("show");
-}
-
-closeBtn.addEventListener("click", function (e) {
-  closeModal1()
-});
-
-modal1.addEventListener("click", function (e) {
-  if (e.target === modal1) {
-    closeModal1();
+modal.forEach((item) => item.addEventListener('click', function (e){
+  console.log(e.target, item)  
+  if (e.target === item) {
+    item.classList.add("hide");
+    item.classList.remove("show");
   }
-});
-
-priceGym.addEventListener('click', function () {
-  openModal1();
-})
-
+}));
