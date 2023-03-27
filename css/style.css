@@ -183,10 +183,10 @@ body {
   border-radius: 5px; }
   @media (max-width: 767px) {
     .price-item {
-      font-size: calc(12px + 20.4 * ((100vw - 320px) / 1440)); } }
+      font-size: calc(12px + 13.6 * ((100vw - 320px) / 1440)); } }
   @media (min-width: 767px) {
     .price-item {
-      font-size: calc(12px + 12 * (100vw / 1440)); } }
+      font-size: calc(12px + 8 * (100vw / 1440)); } }
 
 .price {
   position: relative; }
@@ -431,7 +431,32 @@ body {
     max-width: 30rem; }
 
 .trainer-photo {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+
+.trainer-name {
+  position: absolute;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  font-weight: 700;
+  top: 1rem;
+  color: #1b2f3f; }
+  @media (max-width: 767px) {
+    .trainer-name {
+      font-size: calc(22px + 17 * ((100vw - 320px) / 1440)); } }
+  @media (min-width: 767px) {
+    .trainer-name {
+      font-size: calc(22px + 10 * (100vw / 1440)); } }
+
+.info {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%; }
+  .info img {
+    height: 64px; }
 
 @media (max-width: 1023px) {
   .section {

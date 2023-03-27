@@ -79,14 +79,35 @@
 
 .trainer {
   width: 50%;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem;    
   img {
     width: 90%;
-    max-width: 30rem;
+    max-width: 30rem;        
   }
 }
 .trainer-photo {
   text-align: center;
+  position: relative;
+}
+.trainer-name {
+  position: absolute;  
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  font-weight: 700;  
+  top: 1rem;   
+  color: $color-primary;
+  @include adaptive-font(32, 22);   
+}
+.info {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  img {
+    height: 64px;
+  }
 }
 
 @media (max-width: 1023px) {
