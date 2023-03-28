@@ -462,14 +462,21 @@ body {
   position: absolute;
   bottom: 0rem;
   left: 50%;
-  width: 90%;
-  margin-left: -45%;
+  width: 100%;
+  margin-left: -50%;
   background: linear-gradient(0deg, #1b2f3f 0%, #1b2f3f 0%, rgba(27, 47, 63, 0) 100%); }
 
 .phone-block {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 5rem; }
+  @media (max-width: 767px) {
+    .phone-block .trainer-phone {
+      font-size: calc(20px + 13.6 * ((100vw - 320px) / 1440)); } }
+  @media (min-width: 767px) {
+    .phone-block .trainer-phone {
+      font-size: calc(20px + 8 * (100vw / 1440)); } }
 
 .trainer-social {
   display: flex;
@@ -518,12 +525,13 @@ body {
 
 .logo-info {
   display: flex;
-  justify-content: space-evenly; }
+  align-items: center;
+  justify-content: center; }
   .logo-info img {
-    margin-left: 1rem;
-    height: 14rem; }
+    height: 14rem;
+    margin: 0 1rem; }
 
-.trainer-phone img {
+.contacts-phone img {
   height: 42px;
   margin-left: 0;
   margin-bottom: -5px; }
@@ -535,12 +543,12 @@ body {
 
 .social-icons {
   display: flex;
-  margin-top: 0.5rem;
-  gap: 2rem; }
+  margin-top: 0.5rem; }
   .social-icons img {
     height: 64px; }
 
 iframe {
+  max-width: 32rem;
   width: 40%;
   border-radius: 10px; }
 
@@ -560,7 +568,7 @@ iframe {
   .footer {
     flex-wrap: wrap; }
     .footer img {
-      margin-left: 1rem;
+      margin: 0 0.5rem;
       height: 8rem; }
     .footer .contacts {
       font-size: 0.8rem; }

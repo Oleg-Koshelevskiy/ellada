@@ -1,60 +1,61 @@
 .footer {
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
   margin-bottom: 1rem;
 }
 
 .logo-info {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+
   img {
-    margin-left: 1rem;
     height: 14rem;
+    margin: 0 1rem;
   }
-}  
+}
 
-.trainer-phone img {  
-    height: 42px;
-    margin-left: 0;
-    margin-bottom: -5px; 
-  }
+.contacts-phone img {
+  height: 42px;
+  margin-left: 0;
+  margin-bottom: -5px;
+}
 
-  .contacts-mail img {  
-    height: 54px;
-    margin-left: 0;
-    margin-bottom: -12px; 
-  }
+.contacts-mail img {
+  height: 54px;
+  margin-left: 0;
+  margin-bottom: -12px;
+}
 
 .social-icons {
   display: flex;
   margin-top: 0.5rem;
-  gap: 2rem;
   img {
     height: 64px;
   }
 }
 
 iframe {
-  width: 40%;  
+  max-width: 32rem;
+  width: 40%;
   border-radius: 10px;
 }
 
-
 @media (max-width: 1024px) {
   .footer {
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
   }
   .logo-info {
     width: 100%;
   }
 
   iframe {
-    width: 90%;    
+    width: 90%;
     border-radius: 8px;
     margin-top: 1rem;
   }
 
-  .social-icons {   
+  .social-icons {
     img {
       height: 48px;
     }
@@ -64,9 +65,9 @@ iframe {
 @media (max-width: 512px) {
   .footer {
     flex-wrap: wrap;
-    
+
     img {
-      margin-left: 1rem;
+      margin: 0 0.5rem;
       height: 8rem;
     }
     .contacts {
@@ -77,25 +78,25 @@ iframe {
     width: 100%;
   }
 
-  .contacts-phone img {  
+  .contacts-phone img {
     height: 24px;
     margin-left: 0;
-    margin-bottom: -3px; 
+    margin-bottom: -3px;
   }
 
-  .contacts-mail img {  
+  .contacts-mail img {
     height: 30px;
     margin-left: 0;
-    margin-bottom: -8px; 
+    margin-bottom: -8px;
   }
 
   iframe {
-    width: 90%;    
+    width: 90%;
     border-radius: 8px;
     margin-top: 1rem;
   }
 
-  .social-icons {   
+  .social-icons {
     img {
       height: 36px;
     }

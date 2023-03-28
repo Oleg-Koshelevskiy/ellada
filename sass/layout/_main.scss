@@ -114,14 +114,18 @@
   position: absolute;
   bottom: 0rem;
   left: 50%;
-  width: 90%;
-  margin-left: -45%;
+  width: 100%;
+  margin-left: -50%;
   background: linear-gradient(0deg, rgba(27,47,63,1) 0%, rgba(27,47,63,1) 0%, rgba(27,47,63,0) 100%);
 }
 .phone-block {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 5rem;
+  .trainer-phone {
+    @include adaptive-font(28, 20); 
+  }
 }
 .trainer-social {
   display: flex;

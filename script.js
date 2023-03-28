@@ -36,11 +36,7 @@ modal.forEach((item) => item.addEventListener('click', function (e){
 info.forEach((item, index) => item.addEventListener('click', function (e){ 
   item.classList.add("hide");
   item.classList.remove("show"); 
-  const match = [...trainerContacts].filter((el, i) => i === index);
-  trainerContacts.forEach(item => {
-    item.classList.add("hide");
-    item.classList.remove("show"); 
-  })  
+  const match = [...trainerContacts].filter((el, i) => i === index);   
   match[0].classList.add("show");
   match[0].classList.remove("hide");
 }));
