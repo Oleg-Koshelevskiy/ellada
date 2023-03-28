@@ -8,7 +8,10 @@ menuBtn.addEventListener("click", function () {
 let modal = document.querySelectorAll('.modal');
 let openModalBtn = document.querySelectorAll('.openModal')
 let closeModalBtn = document.querySelectorAll(".btn-close");
-console.log(modal, openModalBtn, closeModalBtn);
+
+let info = document.querySelectorAll('.info');
+let trainerContacts = document.querySelectorAll('.trainer-contacts');
+
 
 openModalBtn.forEach((item, index) => item.addEventListener('click', function (e){  
   const match = [...modal].filter((el, i) => i === index)  
@@ -28,4 +31,16 @@ modal.forEach((item) => item.addEventListener('click', function (e){
     item.classList.add("hide");
     item.classList.remove("show");
   }
+}));
+
+info.forEach((item, index) => item.addEventListener('click', function (e){ 
+  item.classList.add("hide");
+  item.classList.remove("show"); 
+  const match = [...trainerContacts].filter((el, i) => i === index);
+  trainerContacts.forEach(item => {
+    item.classList.add("hide");
+    item.classList.remove("show"); 
+  })  
+  match[0].classList.add("show");
+  match[0].classList.remove("hide");
 }));

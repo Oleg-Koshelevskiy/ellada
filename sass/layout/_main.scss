@@ -110,6 +110,27 @@
   }
 }
 
+.trainer-contacts {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  background: linear-gradient(0deg, rgba(27,47,63,1) 0%, rgba(27,47,63,1) 0%, rgba(27,47,63,0) 100%);
+}
+.phone-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.trainer-social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  
+}
+
 @media (max-width: 1023px) {
   .section {
     margin-top: 5rem;

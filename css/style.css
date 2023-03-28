@@ -458,6 +458,25 @@ body {
   .info img {
     height: 64px; }
 
+.trainer-contacts {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  background: linear-gradient(0deg, #1b2f3f 0%, #1b2f3f 0%, rgba(27, 47, 63, 0) 100%); }
+
+.phone-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem; }
+
+.trainer-social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
 @media (max-width: 1023px) {
   .section {
     margin-top: 5rem;
@@ -496,16 +515,28 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 1rem; }
-  .footer .logo-info {
-    display: flex;
-    justify-content: space-evenly; }
-  .footer img {
+
+.logo-info {
+  display: flex;
+  justify-content: space-evenly; }
+  .logo-info img {
     margin-left: 1rem;
     height: 14rem; }
 
+.trainer-phone img {
+  height: 42px;
+  margin-left: 0;
+  margin-bottom: -5px; }
+
+.contacts-mail img {
+  height: 54px;
+  margin-left: 0;
+  margin-bottom: -12px; }
+
 .social-icons {
   display: flex;
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem;
+  gap: 2rem; }
   .social-icons img {
     height: 64px; }
 
@@ -535,6 +566,14 @@ iframe {
       font-size: 0.8rem; }
   .logo-info {
     width: 100%; }
+  .contacts-phone img {
+    height: 24px;
+    margin-left: 0;
+    margin-bottom: -3px; }
+  .contacts-mail img {
+    height: 30px;
+    margin-left: 0;
+    margin-bottom: -8px; }
   iframe {
     width: 90%;
     border-radius: 8px;

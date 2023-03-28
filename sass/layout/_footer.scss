@@ -1,19 +1,34 @@
 .footer {
   display: flex;
+  justify-content: space-evenly;  
+  margin-bottom: 1rem;
+}
+
+.logo-info {
+  display: flex;
   justify-content: space-evenly;
-  .logo-info {
-    display: flex;
-    justify-content: space-evenly;
-  }  
   img {
     margin-left: 1rem;
     height: 14rem;
   }
-  margin-bottom: 1rem;
-}
+}  
+
+.trainer-phone img {  
+    height: 42px;
+    margin-left: 0;
+    margin-bottom: -5px; 
+  }
+
+  .contacts-mail img {  
+    height: 54px;
+    margin-left: 0;
+    margin-bottom: -12px; 
+  }
+
 .social-icons {
   display: flex;
   margin-top: 0.5rem;
+  gap: 2rem;
   img {
     height: 64px;
   }
@@ -60,6 +75,18 @@ iframe {
   }
   .logo-info {
     width: 100%;
+  }
+
+  .contacts-phone img {  
+    height: 24px;
+    margin-left: 0;
+    margin-bottom: -3px; 
+  }
+
+  .contacts-mail img {  
+    height: 30px;
+    margin-left: 0;
+    margin-bottom: -8px; 
   }
 
   iframe {
