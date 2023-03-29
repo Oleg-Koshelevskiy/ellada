@@ -16,9 +16,12 @@
 }
 
 .contacts-phone img {
-  height: 42px;
-  margin-left: 0;
-  margin-bottom: -5px;
+  // display: inline-block;
+  img {
+    width: 42px;
+    margin-left: 0;
+    margin-bottom: -5px;
+  }
 }
 
 .contacts-mail img {

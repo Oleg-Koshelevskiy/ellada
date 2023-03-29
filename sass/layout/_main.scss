@@ -79,15 +79,15 @@
 
 .trainer {
   width: 50%;
-  margin-bottom: 3rem;    
-  img {
-    width: 90%;
-    max-width: 30rem;        
-  }
+  margin-bottom: 3rem;  
 }
 .trainer-photo {
   text-align: center;
   position: relative;
+  .trainer-img {
+    width: 90%;
+    max-width: 30rem;        
+  }
 }
 .trainer-name {
   position: absolute;  
@@ -123,12 +123,15 @@
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  color: $color-white;
+  .phone-img {
+    height: 50px;
+  }
   .trainer-phone {
     @include adaptive-font(28, 20); 
   }
 }
-.trainer-social {
-  display: flex;
+.trainer-social {  
   gap: 20px;
   justify-content: center;
   margin-bottom: 2rem;
@@ -182,11 +185,11 @@
     }
   }
   .trainer {
-    width: 100%;
-    img {
-      width: 95%;
-      max-width: 20rem;
+    width: 100%;    
+  } 
+  .phone-block {   
+    .phone-img {
+      height: 30px;
     }
   }
-  
 }
