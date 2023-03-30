@@ -236,14 +236,14 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 10rem; }
-    .header-nav ul li a {
+    .header-nav ul li {
       color: #efefef;
       font-size: 1rem;
       font-weight: 500;
       letter-spacing: 2px;
       text-transform: uppercase;
       text-decoration: none; }
-      .header-nav ul li a:hover {
+      .header-nav ul li:hover {
         color: #ee364f;
         cursor: pointer; }
 
@@ -292,7 +292,7 @@ body {
     transition: transform 0.8s; }
     .header-nav ul {
       flex-direction: column; }
-    .header-nav li a {
+    .header-nav li {
       text-decoration: none; }
   .header-nav.active {
     transform: translateX(0);
