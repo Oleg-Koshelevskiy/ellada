@@ -7,16 +7,15 @@
 .logo-info {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
-  img {
+  .logo {
     height: 14rem;
     margin: 0 1rem;
   }
 }
 
-.contacts-phone img {
-  // display: inline-block;
+.contacts-phone {  
   img {
     width: 42px;
     margin-left: 0;
@@ -32,6 +31,7 @@
 
 .social-icons {
   display: flex;
+  gap: 1rem;
   margin-top: 0.5rem;
   img {
     height: 64px;
@@ -69,7 +69,7 @@ iframe {
   .footer {
     flex-wrap: wrap;
 
-    img {
+    .logo {
       margin: 0 0.5rem;
       height: 8rem;
     }
@@ -82,7 +82,7 @@ iframe {
   }
 
   .contacts-phone img {
-    height: 24px;
+    width: 24px;
     margin-left: 0;
     margin-bottom: -3px;
   }

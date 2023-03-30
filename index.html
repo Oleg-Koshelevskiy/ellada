@@ -48,10 +48,10 @@
 
           <nav class="header-nav">
             <ul>
-              <li>Про нас</li>
-              <li>Послуги</li>
-              <li>Тренери</li>
-              <li>Контакти</li>
+              <li><a href="#about-us">Про нас</a></li>
+              <li><a href="#servises">Послуги</a></li>
+              <li><a href="#trainers">Тренери</a></li>
+              <li><a href="#contacts">Контакти</a></li>
             </ul>
           </nav>
         </div>
@@ -60,7 +60,7 @@
 
     <main>
       <section class="container section">
-        <h1 class="primaryHeader colorWhite">Про нас</h1>
+        <h1 id="about-us" class="primaryHeader colorWhite">Про нас</h1>
         <div class="content-block colorWhite">
           <div class="content-item">
             <p class="paragraph">
@@ -122,7 +122,7 @@
       </section>
 
       <section>
-        <h1 class="container primaryHeader colorWhite">Послуги</h1>
+        <h1 id="servises" class="container primaryHeader colorWhite">Послуги</h1>
         <div>
           <article class="bgr-gym">
             <h2 class="secondaryHeader colorRed">Тренажерна зала</h2>
@@ -215,7 +215,7 @@
       </section>
 
       <section>
-        <h1 class="container primaryHeader colorWhite">Тренери</h1>
+        <h1 id="trainers" class="container primaryHeader colorWhite">Тренери</h1>
         <div class="trainers">
           <div class="trainer">
             <div class="trainer-photo">
@@ -227,7 +227,7 @@
               <div class="trainer-contacts hide">
                 <div class="phone-block">
                   <div class="contacts-phone">
-                    <img class="phone-img" src="images/smartphone.png" alt="smartphone" />
+                    <img src="images/smartphone.png" alt="smartphone" />
                   </div>
                   <div class="trainer-phone colorWhite">+380978372845</div>
                 </div>
@@ -256,7 +256,7 @@
               <div class="trainer-contacts hide">
                 <div class="phone-block">
                   <div class="contacts-phone">
-                    <img class="phone-img" src="images/smartphone.png" alt="smartphone" />
+                    <img src="images/smartphone.png" alt="smartphone" />
                   </div>
                   <div class="trainer-phone colorWhite">+380971275857</div>
                 </div>
@@ -298,12 +298,12 @@
     </main>
 
     <footer>
-      <h1 class="container primaryHeader colorWhite">Контакти</h1>
+      <h1 id="contacts" class="container primaryHeader colorWhite">Контакти</h1>
       <div class="container">
         <div class="footer">
           <div class="logo-info">
-            <div class="logo">
-              <img src="images/logo-vert.svg" alt="Ellada logo vertical" />
+            <div >
+              <img class="logo" src="images/logo-vert.svg" alt="Ellada logo vertical" />
             </div>
             <div class="contacts paragraph colorWhite">
               <div class="contacts-address">
@@ -357,20 +357,24 @@
           <div class="price">100 грн</div>
         </div>
         <div class="price-item paragraph">
+          <div class="list-item">Ранковий 1 міс.</div>
+          <div class="price">420 грн</div>
+        </div>
+        <div class="price-item paragraph">
           <div class="list-item">Індивідуальний 1 міс.</div>
           <div class="price">550 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Індивідуальний 3 міс.</div>
-          <div class="price">1300 грн<span class="economy">-21%</span></div>
+          <div class="price">1300 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Індивідуальний 6 міс.</div>
-          <div class="price">2400 грн<span class="economy">-27%</span></div>
+          <div class="price">2400 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Індивідуальний 12 міс.</div>
-          <div class="price">4200 грн<span class="economy">-36%</span></div>
+          <div class="price">4200 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Персональне заняття</div>
@@ -378,7 +382,7 @@
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Пакет персональних (10 шт.)</div>
-          <div class="price">2250 грн<span class="economy">-20%</span></div>
+          <div class="price">2250 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Персональне (спліт)</div>
@@ -386,7 +390,11 @@
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Персональне (спліт 10 шт.)</div>
-          <div class="price">3800 грн<span class="economy">-16%</span></div>
+          <div class="price">3800 грн</div>
+        </div>
+        <div class="price-item paragraph">
+          <div class="list-item">Пакет Юніор (10 шт.)</div>
+          <div class="price">1850 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Розробка програми</div>
@@ -426,13 +434,13 @@
         <h2 class="tertiaryHeader colorRed">Групові заняття</h2>
         <div class="price-item paragraph">
           <div class="list-item">
-            Fitness Mix Pilates Aerobic dance (1 заняття)
+            Fitness Mix (1 заняття)
           </div>
           <div class="price">100 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">
-            Fitness Mix Pilates Aerobic dance 1 місяць (12 занять)
+            Fitness Mix 1 місяць (12 занять)
           </div>
           <div class="price">1000 грн</div>
         </div>
@@ -449,11 +457,19 @@
           <div class="price">4500 грн</div>
         </div>
         <div class="price-item paragraph">
-          <div class="list-item">Йога, Baree (разове)</div>
+          <div class="list-item">Йога (разове)</div>
           <div class="price">100 грн</div>
         </div>
         <div class="price-item paragraph">
-          <div class="list-item">Йога, Baree 1 місяць (8 занять)</div>
+          <div class="list-item">Йога 1 місяць (8 занять)</div>
+          <div class="price">720 грн</div>
+        </div>
+        <div class="price-item paragraph">
+          <div class="list-item">Baree (разове)</div>
+          <div class="price">100 грн</div>
+        </div>
+        <div class="price-item paragraph">
+          <div class="list-item">Baree 1 місяць (8 занять)</div>
           <div class="price">720 грн</div>
         </div>
         <button class="main-btn">Отримати консультацію</button>

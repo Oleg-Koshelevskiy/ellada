@@ -124,9 +124,7 @@
   align-items: center;
   margin-top: 5rem;
   color: $color-white;
-  .phone-img {
-    height: 50px;
-  }
+  
   .trainer-phone {
     @include adaptive-font(28, 20); 
   }
