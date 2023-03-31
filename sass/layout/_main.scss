@@ -86,7 +86,8 @@
   position: relative;
   .trainer-img {
     width: 90%;
-    max-width: 30rem;        
+    max-width: 30rem;
+    border-radius: 10px;        
   }
 }
 .trainer-name {
@@ -98,6 +99,10 @@
   top: 1rem;   
   color: $color-primary;
   @include adaptive-font(32, 22);   
+}
+.trainer-position {
+  @include adaptive-font(20, 14);
+  @include adaptive-margin(10, 5);  
 }
 .info {
   position: absolute;

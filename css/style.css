@@ -407,7 +407,8 @@ body {
   position: relative; }
   .trainer-photo .trainer-img {
     width: 90%;
-    max-width: 30rem; }
+    max-width: 30rem;
+    border-radius: 10px; }
 
 .trainer-name {
   position: absolute;
@@ -423,6 +424,24 @@ body {
   @media (min-width: 767px) {
     .trainer-name {
       font-size: calc(22px + 10 * (100vw / 1440)); } }
+
+@media (max-width: 767px) {
+  .trainer-position {
+    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1440)); } }
+
+@media (min-width: 767px) {
+  .trainer-position {
+    font-size: calc(14px + 6 * (100vw / 1440)); } }
+
+@media (max-width: 767px) {
+  .trainer-position {
+    margin-top: calc(5px + 8.5 * ((100vw - 320px) / 1440));
+    margin-bottom: calc(5px + 8.5 * ((100vw - 320px) / 1440)); } }
+
+@media (min-width: 767px) {
+  .trainer-position {
+    margin-top: calc(5px + 5 * (100vw / 1440));
+    margin-bottom: calc(5px + 5 * (100vw / 1440)); } }
 
 .info {
   position: absolute;

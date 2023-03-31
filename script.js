@@ -48,26 +48,14 @@ info.forEach((item, index) =>
   })
 );
 
-const btnScrollToAbout = document.querySelector("#to-about-us");
-const sectionAbout = document.querySelector("#about-us");
-btnScrollToAbout.addEventListener("click", function (e) {
-  sectionAbout.scrollIntoView({ behavior: "smooth" });
-});
+const btnScrollToSection = document.querySelectorAll(".nav-item");
+const markedSection = document.querySelectorAll(".scrollSection");
 
-const btnScrollToServises = document.querySelector("#to-servises");
-const sectionServises = document.querySelector("#servises");
-btnScrollToServises.addEventListener("click", function (e) {
-  sectionServises.scrollIntoView({ behavior: "smooth" });
-});
+console.log(btnScrollToSection, markedSection)
 
-const btnScrollToTrainers = document.querySelector("#to-trainers");
-const sectionTrainers = document.querySelector("#trainers");
-btnScrollToTrainers.addEventListener("click", function (e) {
-  sectionTrainers.scrollIntoView({ behavior: "smooth" });
-});
-
-const btnScrollToContacts = document.querySelector("#to-contacts");
-const sectionContacts = document.querySelector("#contacts");
-btnScrollToContacts.addEventListener("click", function (e) {
-  sectionContacts.scrollIntoView({ behavior: "smooth" });
-});
+btnScrollToSection.forEach((item, index) => {  
+  item.addEventListener('click', function (e) {
+    const match = [...markedSection].filter((el, i) => i === index);
+    match[0].scrollIntoView({ behavior: "smooth" });
+  })
+})
