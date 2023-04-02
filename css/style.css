@@ -399,7 +399,7 @@ body {
   flex-wrap: wrap; }
 
 .trainer {
-  width: 50%;
+  width: 25%;
   margin-bottom: 3rem; }
 
 .trainer-photo {
@@ -407,7 +407,7 @@ body {
   position: relative; }
   .trainer-photo .trainer-img {
     width: 90%;
-    max-width: 30rem;
+    max-width: 20rem;
     border-radius: 10px; }
 
 .trainer-name {
@@ -420,28 +420,28 @@ body {
   color: #1b2f3f; }
   @media (max-width: 767px) {
     .trainer-name {
-      font-size: calc(22px + 17 * ((100vw - 320px) / 1440)); } }
+      font-size: calc(22px + 6.8 * ((100vw - 320px) / 1440)); } }
   @media (min-width: 767px) {
     .trainer-name {
-      font-size: calc(22px + 10 * (100vw / 1440)); } }
+      font-size: calc(22px + 4 * (100vw / 1440)); } }
 
 @media (max-width: 767px) {
   .trainer-position {
-    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1440)); } }
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1440)); } }
 
 @media (min-width: 767px) {
   .trainer-position {
-    font-size: calc(14px + 6 * (100vw / 1440)); } }
+    font-size: calc(14px + 4 * (100vw / 1440)); } }
 
 @media (max-width: 767px) {
   .trainer-position {
-    margin-top: calc(5px + 8.5 * ((100vw - 320px) / 1440));
-    margin-bottom: calc(5px + 8.5 * ((100vw - 320px) / 1440)); } }
+    margin-top: calc(4px + 3.4 * ((100vw - 320px) / 1440));
+    margin-bottom: calc(4px + 3.4 * ((100vw - 320px) / 1440)); } }
 
 @media (min-width: 767px) {
   .trainer-position {
-    margin-top: calc(5px + 5 * (100vw / 1440));
-    margin-bottom: calc(5px + 5 * (100vw / 1440)); } }
+    margin-top: calc(4px + 2 * (100vw / 1440));
+    margin-bottom: calc(4px + 2 * (100vw / 1440)); } }
 
 .info {
   position: absolute;
@@ -468,10 +468,10 @@ body {
   color: #efefef; }
   @media (max-width: 767px) {
     .phone-block .trainer-phone {
-      font-size: calc(20px + 13.6 * ((100vw - 320px) / 1440)); } }
+      font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440)); } }
   @media (min-width: 767px) {
     .phone-block .trainer-phone {
-      font-size: calc(20px + 8 * (100vw / 1440)); } }
+      font-size: calc(20px + 4 * (100vw / 1440)); } }
 
 .trainer-social {
   gap: 20px;
@@ -500,7 +500,9 @@ body {
     margin-left: -7px;
     margin-bottom: -7px; }
   .slides-gym {
-    margin: 0 0.5rem; } }
+    margin: 0 0.5rem; }
+  .trainer {
+    width: 50%; } }
 
 @media (max-width: 512px) {
   .advantages li {
@@ -539,7 +541,7 @@ body {
   gap: 1rem;
   margin-top: 0.5rem; }
   .social-icons img {
-    height: 64px; }
+    height: 48px; }
 
 iframe {
   max-width: 32rem;
@@ -556,7 +558,7 @@ iframe {
     border-radius: 8px;
     margin-top: 1rem; }
   .social-icons img {
-    height: 48px; } }
+    height: 42px; } }
 
 @media (max-width: 512px) {
   .footer {

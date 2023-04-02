@@ -78,31 +78,31 @@
 }
 
 .trainer {
-  width: 50%;
-  margin-bottom: 3rem;  
+  width: 25%;
+  margin-bottom: 3rem;
 }
 .trainer-photo {
   text-align: center;
   position: relative;
   .trainer-img {
     width: 90%;
-    max-width: 30rem;
-    border-radius: 10px;        
+    max-width: 20rem;
+    border-radius: 10px;
   }
 }
 .trainer-name {
-  position: absolute;  
+  position: absolute;
   left: 50%;
   width: 90%;
   margin-left: -45%;
-  font-weight: 700;  
-  top: 1rem;   
+  font-weight: 700;
+  top: 1rem;
   color: $color-primary;
-  @include adaptive-font(32, 22);   
+  @include adaptive-font(26, 22);
 }
 .trainer-position {
-  @include adaptive-font(20, 14);
-  @include adaptive-margin(10, 5);  
+  @include adaptive-font(18, 14);
+  @include adaptive-margin(6, 4);
 }
 .info {
   position: absolute;
@@ -121,7 +121,12 @@
   left: 50%;
   width: 100%;
   margin-left: -50%;
-  background: linear-gradient(0deg, rgba(27,47,63,1) 0%, rgba(27,47,63,1) 0%, rgba(27,47,63,0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(27, 47, 63, 1) 0%,
+    rgba(27, 47, 63, 1) 0%,
+    rgba(27, 47, 63, 0) 100%
+  );
 }
 .phone-block {
   display: flex;
@@ -129,16 +134,15 @@
   align-items: center;
   margin-top: 5rem;
   color: $color-white;
-  
+
   .trainer-phone {
-    @include adaptive-font(28, 20); 
+    @include adaptive-font(24, 20);
   }
 }
-.trainer-social {  
+.trainer-social {
   gap: 20px;
   justify-content: center;
   margin-bottom: 2rem;
-  
 }
 
 @media (max-width: 1023px) {
@@ -178,6 +182,10 @@
   .slides-gym {
     margin: 0 0.5rem;
   }
+
+  .trainer {
+    width: 50%;
+  }
 }
 
 @media (max-width: 512px) {
@@ -188,9 +196,9 @@
     }
   }
   .trainer {
-    width: 100%;    
-  } 
-  .phone-block {   
+    width: 100%;
+  }
+  .phone-block {
     .phone-img {
       height: 30px;
     }
