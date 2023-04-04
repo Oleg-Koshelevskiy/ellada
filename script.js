@@ -20,15 +20,14 @@ openModalBtn.forEach((item, index) =>
 closeModalBtn.forEach((item, index) =>
   item.addEventListener("click", function (e) {
     const match = [...modal].filter((el, i) => i === index);
-    
-      match[0].classList.add("hide");
-      match[0].classList.remove("show");
-   
+
+    match[0].classList.add("hide");
+    match[0].classList.remove("show");
   })
 );
 
 modal.forEach((item) =>
-  item.addEventListener("click", function (e) {    
+  item.addEventListener("click", function (e) {
     if (e.target === item) {
       item.classList.add("hide");
       item.classList.remove("show");
@@ -52,11 +51,35 @@ info.forEach((item, index) =>
 const btnScrollToSection = document.querySelectorAll(".nav-item");
 const markedSection = document.querySelectorAll(".scrollSection");
 
-console.log(btnScrollToSection, markedSection)
-
-btnScrollToSection.forEach((item, index) => {  
-  item.addEventListener('click', function (e) {
+btnScrollToSection.forEach((item, index) => {
+  item.addEventListener("click", function (e) {
     const match = [...markedSection].filter((el, i) => i === index);
     match[0].scrollIntoView({ behavior: "smooth" });
-  })
-})
+  });
+});
+
+const arrowSection = document.querySelector(".arrow-section");
+const arrow = document.querySelector(".scroll-arrow");
+arrow.addEventListener("click", (e) => {
+  arrowSection.scrollIntoView({ behavior: "smooth" });
+});
+
+const showArrow = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) {
+    arrow.classList.add("show");
+    arrow.classList.remove("hide");
+  } else {
+    arrow.classList.add("hide");
+    arrow.classList.remove("show");
+  }
+};
+
+const obsOptions = {
+  root: null,
+  threshold: 0,
+};
+
+const scrollObserver = new IntersectionObserver(showArrow, obsOptions);
+scrollObserver.observe(arrowSection);

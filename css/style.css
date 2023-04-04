@@ -224,6 +224,28 @@ body {
   .price-item {
     padding: 0.2rem; } }
 
+.scroll-arrow {
+  right: 2rem;
+  bottom: 2rem;
+  position: fixed;
+  z-index: 10; }
+  .scroll-arrow img {
+    width: 2rem; }
+
+@media (max-width: 1023px) {
+  .scroll-arrow {
+    right: 0.75rem;
+    bottom: 1rem; }
+    .scroll-arrow img {
+      width: 1.5rem; } }
+
+@media (max-width: 512px) {
+  .scroll-arrow {
+    right: 0.5rem;
+    bottom: 1rem; }
+    .scroll-arrow img {
+      width: 1rem; } }
+
 .header {
   display: flex;
   gap: 2rem;
