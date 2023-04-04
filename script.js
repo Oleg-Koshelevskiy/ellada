@@ -9,9 +9,6 @@ let modal = document.querySelectorAll(".modal");
 let openModalBtn = document.querySelectorAll(".openModal");
 let closeModalBtn = document.querySelectorAll(".btn-close");
 
-let info = document.querySelectorAll(".info");
-let trainerContacts = document.querySelectorAll(".trainer-contacts");
-
 openModalBtn.forEach((item, index) =>
   item.addEventListener("click", function (e) {
     const match = [...modal].filter((el, i) => i === index);
@@ -23,14 +20,15 @@ openModalBtn.forEach((item, index) =>
 closeModalBtn.forEach((item, index) =>
   item.addEventListener("click", function (e) {
     const match = [...modal].filter((el, i) => i === index);
-    match[0].classList.add("hide");
-    match[0].classList.remove("show");
+    
+      match[0].classList.add("hide");
+      match[0].classList.remove("show");
+   
   })
 );
 
 modal.forEach((item) =>
-  item.addEventListener("click", function (e) {
-    console.log(e.target, item);
+  item.addEventListener("click", function (e) {    
     if (e.target === item) {
       item.classList.add("hide");
       item.classList.remove("show");
@@ -38,13 +36,16 @@ modal.forEach((item) =>
   })
 );
 
+let info = document.querySelectorAll(".info");
+let trainerContacts = document.querySelectorAll(".trainer-contacts");
+
 info.forEach((item, index) =>
   item.addEventListener("click", function (e) {
-    item.classList.add("hide");
-    item.classList.remove("show");
+    item.classList.add("hide-info");
+    item.classList.remove("show-info");
     const match = [...trainerContacts].filter((el, i) => i === index);
-    match[0].classList.add("show");
-    match[0].classList.remove("hide");
+    match[0].classList.add("show-info");
+    match[0].classList.remove("hide-info");
   })
 );
 

@@ -193,10 +193,18 @@ body {
   position: relative; }
 
 .show {
-  display: block; }
+  display: block;
+  opacity: 1;
+  animation: ani1 0.8s forwards; }
 
 .hide {
   display: none; }
+
+@keyframes ani1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @media (max-width: 1023px) {
   .modal-window {
@@ -420,18 +428,18 @@ body {
   color: #1b2f3f; }
   @media (max-width: 767px) {
     .trainer-name {
-      font-size: calc(22px + 6.8 * ((100vw - 320px) / 1440)); } }
+      font-size: calc(22px + 3.4 * ((100vw - 320px) / 1440)); } }
   @media (min-width: 767px) {
     .trainer-name {
-      font-size: calc(22px + 4 * (100vw / 1440)); } }
+      font-size: calc(22px + 2 * (100vw / 1440)); } }
 
 @media (max-width: 767px) {
   .trainer-position {
-    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1440)); } }
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440)); } }
 
 @media (min-width: 767px) {
   .trainer-position {
-    font-size: calc(14px + 4 * (100vw / 1440)); } }
+    font-size: calc(14px + 2 * (100vw / 1440)); } }
 
 @media (max-width: 767px) {
   .trainer-position {
@@ -450,7 +458,23 @@ body {
   width: 90%;
   margin-left: -45%; }
   .info img {
-    height: 64px; }
+    height: 48px; }
+    .info img:hover {
+      transform: scale(1.2);
+      cursor: pointer; }
+
+.show-info {
+  display: block;
+  animation: ani 1s backwards; }
+
+.hide-info {
+  display: none; }
+
+@keyframes ani {
+  0% {
+    transform: translateY(40%); }
+  100% {
+    transform: translateY(0%); } }
 
 .trainer-contacts {
   position: absolute;
@@ -468,10 +492,10 @@ body {
   color: #efefef; }
   @media (max-width: 767px) {
     .phone-block .trainer-phone {
-      font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440)); } }
+      font-size: calc(18px + 6.8 * ((100vw - 320px) / 1440)); } }
   @media (min-width: 767px) {
     .phone-block .trainer-phone {
-      font-size: calc(20px + 4 * (100vw / 1440)); } }
+      font-size: calc(18px + 4 * (100vw / 1440)); } }
 
 .trainer-social {
   gap: 20px;
@@ -541,7 +565,7 @@ body {
   gap: 1rem;
   margin-top: 0.5rem; }
   .social-icons img {
-    height: 48px; }
+    height: 42px; }
 
 iframe {
   max-width: 32rem;
@@ -558,7 +582,7 @@ iframe {
     border-radius: 8px;
     margin-top: 1rem; }
   .social-icons img {
-    height: 42px; } }
+    height: 36px; } }
 
 @media (max-width: 512px) {
   .footer {
@@ -583,4 +607,4 @@ iframe {
     border-radius: 8px;
     margin-top: 1rem; }
   .social-icons img {
-    height: 36px; } }
+    height: 32px; } }

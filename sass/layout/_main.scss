@@ -98,10 +98,10 @@
   font-weight: 700;
   top: 1rem;
   color: $color-primary;
-  @include adaptive-font(26, 22);
+  @include adaptive-font(24, 22);
 }
 .trainer-position {
-  @include adaptive-font(18, 14);
+  @include adaptive-font(16, 14);
   @include adaptive-margin(6, 4);
 }
 .info {
@@ -111,11 +111,28 @@
   width: 90%;
   margin-left: -45%;
   img {
-    height: 64px;
-  }
+    height: 48px;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }  
 }
 
-.trainer-contacts {
+.show-info {
+  display: block;  
+  animation: ani 1s backwards;
+}
+.hide-info {
+  display: none;
+}
+
+@keyframes ani {
+  0% {transform: translateY(40%);}
+  100% {transform: translateY(0%);}
+}
+
+.trainer-contacts {  
   position: absolute;
   bottom: 0rem;
   left: 50%;
@@ -128,6 +145,8 @@
     rgba(27, 47, 63, 0) 100%
   );
 }
+
+
 .phone-block {
   display: flex;
   justify-content: center;
@@ -136,7 +155,7 @@
   color: $color-white;
 
   .trainer-phone {
-    @include adaptive-font(24, 20);
+    @include adaptive-font(22, 18);
   }
 }
 .trainer-social {
