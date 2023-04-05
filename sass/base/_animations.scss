@@ -1,0 +1,12 @@
+.show-info {
+    display: block;  
+    animation: ani 1s backwards;
+  }
+  .hide-info {
+    display: none;
+  }
+  
+  @keyframes ani {
+    0% {transform: translateY(40%);}
+    100% {transform: translateY(0%);}
+  }

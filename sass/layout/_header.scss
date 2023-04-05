@@ -26,11 +26,11 @@
       font-size: 1rem;
       font-weight: 500;
       letter-spacing: 2px;
-      text-transform: uppercase;
-      text-decoration: none;
+      text-transform: uppercase;      
       &:hover {
         color: $color-secondary;
         cursor: pointer;
+        transform: scale(1.1);
       }
     }
   }
@@ -92,10 +92,6 @@
     transition: transform 0.8s;
     ul {
       flex-direction: column;
-    }
-
-    li {
-      text-decoration: none;
     }
   }
 
