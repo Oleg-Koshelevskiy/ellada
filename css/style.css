@@ -117,7 +117,9 @@ body {
   letter-spacing: 1px;
   color: #ee364f;
   background-color: #efefef;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  width: fit-content; }
   .main-btn:hover {
     background-color: #ee364f;
     color: #efefef;
@@ -595,6 +597,39 @@ iframe {
   width: 40%;
   border-radius: 10px; }
 
+.creator {
+  color: #ccc;
+  margin: 3rem 0 0 1rem; }
+  @media (max-width: 767px) {
+    .creator {
+      font-size: calc(12px + 6.8 * ((100vw - 320px) / 1440)); } }
+  @media (min-width: 767px) {
+    .creator {
+      font-size: calc(12px + 4 * (100vw / 1440)); } }
+  .creator a {
+    color: #ccc; }
+  .creator sup {
+    vertical-align: super; }
+    @media (max-width: 767px) {
+      .creator sup {
+        font-size: calc(10px + 3.4 * ((100vw - 320px) / 1440)); } }
+    @media (min-width: 767px) {
+      .creator sup {
+        font-size: calc(10px + 2 * (100vw / 1440)); } }
+
+.resourses {
+  color: #777;
+  line-height: 1.5rem;
+  margin: 1rem 0 0.5rem 1rem; }
+  @media (max-width: 767px) {
+    .resourses {
+      font-size: calc(12px + 3.4 * ((100vw - 320px) / 1440)); } }
+  @media (min-width: 767px) {
+    .resourses {
+      font-size: calc(12px + 2 * (100vw / 1440)); } }
+  .resourses a {
+    color: #888; }
+
 @media (max-width: 1024px) {
   .footer {
     flex-wrap: wrap; }
@@ -630,4 +665,9 @@ iframe {
     border-radius: 8px;
     margin-top: 1rem; }
   .social-icons img {
-    height: 32px; } }
+    height: 32px; }
+  .creator {
+    margin: 2rem 0 0 0.5rem; }
+  .resourses {
+    margin: 1rem 0 1rem 0.5rem;
+    line-height: 1.2rem; } }

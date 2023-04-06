@@ -44,6 +44,29 @@ iframe {
   border-radius: 10px;
 }
 
+.creator {
+  color: #ccc;
+  margin: 3rem 0 0 1rem;
+  @include adaptive-font(16, 12);
+  & a {
+    color: #ccc;
+  }
+  & sup {
+    vertical-align: super;
+    @include adaptive-font(12, 10);
+  }
+}
+
+.resourses {
+  color: #777;
+  line-height: 1.5rem;
+  margin: 1rem 0 0.5rem 1rem;
+  @include adaptive-font(14, 12);
+  & a {
+    color: #888;
+  }
+}
+
 @media (max-width: 1024px) {
   .footer {
     flex-wrap: wrap;
@@ -103,5 +126,14 @@ iframe {
     img {
       height: 32px;
     }
+  }
+
+  .creator {
+    margin: 2rem 0 0 0.5rem;
+  }
+
+  .resourses {
+    margin: 1rem 0 1rem 0.5rem;
+    line-height: 1.2rem;
   }
 }
