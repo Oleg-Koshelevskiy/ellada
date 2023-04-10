@@ -26,7 +26,7 @@
       font-size: 1rem;
       font-weight: 500;
       letter-spacing: 2px;
-      text-transform: uppercase;      
+      text-transform: uppercase;
       &:hover {
         color: $color-secondary;
         cursor: pointer;
@@ -48,7 +48,7 @@
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     font-weight: 400;
-    bottom: 10%;
+    bottom: 15%;
     left: 1rem;
     width: 30%;
     text-align: center;
@@ -75,6 +75,7 @@
     p {
       font-size: 1.5rem;
       left: 1rem;
+      bottom: 10%;
     }
   }
 
