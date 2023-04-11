@@ -51,11 +51,11 @@
 .price-item {
   display: flex;
   justify-content: space-between;
-  padding: 0.3rem;
+  padding: 0.2rem;
   margin-bottom: 5px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  @include adaptive-font(20, 12);
+  @include adaptive-font(18, 12);
 }
 
 .price {
@@ -87,7 +87,7 @@
     width: calc(100% - 60px);
   }
   .price-item {
-    padding: 0.2rem;
+    padding: 0.15rem;
   }
 }
 
@@ -101,6 +101,6 @@
     top: 0.5rem;
   }
   .price-item {
-    padding: 0.2rem;
+    padding: 0.1rem;
   }
 }

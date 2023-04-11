@@ -2,6 +2,12 @@ body {
   font-family: "Roboto", sans-serif;
   background: $color-primary;
   box-sizing: border-box;
+  & ::selection {
+    background: #ee364f56;    
+    }
+  & ::-moz-selection {
+    background: #ee364f56;    
+    }
 }
 
 .container {
@@ -9,3 +15,4 @@ body {
   display: block;
   margin: 0 auto;
 }
+
