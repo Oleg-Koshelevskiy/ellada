@@ -39,9 +39,9 @@
 
 .paragraph {  
   margin-bottom: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   line-height: 2rem;
-  @include adaptive-font(24, 16);
+  @include adaptive-font(20, 16);
 }
 
 @media (max-width: 1023px) {
