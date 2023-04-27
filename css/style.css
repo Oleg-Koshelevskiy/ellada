@@ -110,6 +110,9 @@ body {
 .colorRed {
   color: #ee364f; }
 
+.centerText {
+  text-align: center; }
+
 .main-btn {
   margin: 2rem auto;
   display: block;
@@ -269,7 +272,7 @@ body {
       width: 1rem; } }
 
 .trainer {
-  width: 25%;
+  width: 33.3333%;
   margin-bottom: 3rem; }
 
 .trainer-photo {
@@ -277,7 +280,7 @@ body {
   position: relative; }
   .trainer-photo .trainer-img {
     width: 90%;
-    max-width: 20rem;
+    max-width: 23rem;
     border-radius: 10px; }
 
 .trainer-name {
@@ -635,6 +638,37 @@ iframe {
   .resourses a {
     color: #888; }
 
+@media (max-width: 767px) {
+  .callback-form {
+    margin-top: calc(30px + 51 * ((100vw - 320px) / 1440));
+    margin-bottom: calc(30px + 51 * ((100vw - 320px) / 1440)); } }
+
+@media (min-width: 767px) {
+  .callback-form {
+    margin-top: calc(30px + 30 * (100vw / 1440));
+    margin-bottom: calc(30px + 30 * (100vw / 1440)); } }
+
+.asking-form input {
+  color: #1b2f3f; }
+  @media (max-width: 767px) {
+    .asking-form input {
+      font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440)); } }
+  @media (min-width: 767px) {
+    .asking-form input {
+      font-size: calc(16px + 4 * (100vw / 1440)); } }
+  @media (max-width: 767px) {
+    .asking-form input {
+      margin-top: calc(10px + 17 * ((100vw - 320px) / 1440));
+      margin-bottom: calc(10px + 17 * ((100vw - 320px) / 1440)); } }
+  @media (min-width: 767px) {
+    .asking-form input {
+      margin-top: calc(10px + 10 * (100vw / 1440));
+      margin-bottom: calc(10px + 10 * (100vw / 1440)); } }
+
+.asking-form__message {
+  width: 95%;
+  max-width: 35rem; }
+
 @media (max-width: 1024px) {
   .footer {
     flex-wrap: wrap; }
@@ -676,3 +710,14 @@ iframe {
   .resourses {
     margin: 1rem 0 1rem 0.5rem;
     line-height: 1.2rem; } }
+
+.thanks {
+  margin-top: 12vh; }
+
+.thanks-managers {
+  display: flex;
+  justify-content: center; }
+  .thanks-managers img {
+    width: 95%;
+    border-radius: 10px;
+    max-width: 40rem; }

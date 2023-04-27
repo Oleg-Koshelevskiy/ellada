@@ -67,6 +67,22 @@ iframe {
   }
 }
 
+.callback-form {
+  @include adaptive-margin(60, 30);
+}
+
+.asking-form {
+  input {
+    color: $color-primary;
+    @include adaptive-font(20, 16);
+    @include adaptive-margin(20, 10);
+  }
+  &__message {
+    width: 95%;
+    max-width: 35rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .footer {
     flex-wrap: wrap;

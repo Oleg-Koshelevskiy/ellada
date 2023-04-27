@@ -494,6 +494,45 @@
     <footer class="scrollSection">
       <h1 class="container primaryHeader colorWhite">Контакти</h1>
       <div class="container">
+        <div class="callback-form">
+          <div class="paragraph colorWhite centerText">
+            Є запитання? Заповніть форму - ми вам зателефонуємо
+          </div>
+          <form
+            class="asking-form centerText"
+            action="https://formsubmit.co/oleg17.k@gmail.com"
+            method="POST"
+          >
+            <div>
+              <input type="text" name="Ім'я" placeholder="Ваше ім'я" required />
+              <input
+                type="phone"
+                name="телефон"
+                placeholder="Ваш номер телефону"
+                required
+              />
+            </div>
+            <input
+              class="asking-form__message"
+              type="text"
+              name="повідомлення"
+              placeholder="Ваше питання"
+              required
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Нове питання відвідувача сайту"
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/pages/thanks.html"
+            />
+            <button class="main-btn" type="submit">Надіслати</button>
+          </form>
+        </div>
         <div class="footer">
           <div class="logo-info">
             <div>
@@ -658,11 +697,11 @@
         <h2 class="tertiaryHeader colorRed">Зала боксу</h2>
         <div class="price-item paragraph">
           <div class="list-item">Разове відвідування (діти)</div>
-          <div class="price">50 грн</div>
+          <div class="price">80 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Абонемент 1 міс. (діти)</div>
-          <div class="price">400 грн</div>
+          <div class="price">550 грн</div>
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Разове відвідування (дорослі)</div>
@@ -670,7 +709,7 @@
         </div>
         <div class="price-item paragraph">
           <div class="list-item">Абонемент 1 міс.</div>
-          <div class="price">500 грн</div>
+          <div class="price">550 грн</div>
         </div>
         <a
           class="main-btn"
